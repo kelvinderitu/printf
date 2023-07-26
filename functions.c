@@ -1,5 +1,4 @@
 #include "main.h"
-
 /************************* PRINT CHAR *************************/
 
 /**
@@ -99,10 +98,10 @@ int print_percent(va_list types, char buffer[],
 
 /************************* PRINT INT *************************/
 /**
- * print_int - Print int
- * @types: Lista of arguments
+ * print_int - prints an int
+ * @types: List of arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags: calculates active flags
  * @width: get width.
  * @precision: Precision specification
  * @size: Size specifier
@@ -140,13 +139,12 @@ int print_int(va_list types, char buffer[],
 
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
-
 /************************* PRINT BINARY *************************/
 /**
  * print_binary - Prints an unsigned number
- * @types: Lista of arguments
+ * @types: list of arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags: Calculates active flags
  * @width: get width.
  * @precision: Precision specification
  * @size: Size specifier
